@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Impromex Dispatch</string>
+    <string name="home_fragment_label" translatable="false">Impromex Dispatch</string>
+    <string name="upload_fragment_label_1" translatable="false">Entry Delivery Machine</string>
+    <string name="upload_fragment_label_2" translatable="false">Entry Withdrawal Machine</string>
+
+    <string name="label_delivery" translatable="false">Delivery</string>
+    <string name="label_pickup" translatable="false">Withdrawal</string>
+    <string name="label_machine" translatable="false">#Machine</string>
+    <string name="label_dispatch" translatable="false">Dispatch Guide</string>
+    <string name="label_photo" translatable="false">Photos Teams</string>
+    <string name="label_add" translatable="false">Add</string>
+    <string name="label_scan_prompt" translatable="false">Scan a barcode</string>
+    <string name="label_empty" translatable="false">No any images here.</string>
+    <string name="label_barcode_hint" translatable="false">Barcode</string>
+
+    <string name="msg_err_request" translatable="false">An error occurred during prepare the request data</string>
+    <string name="msg_err_upload" translatable="false">An error occurred during register machine</string>
+    <string name="msg_err_scan" translatable="false">Please type or scan a barcode for identify your machine.</string>
+    <string name="msg_err_cap_bill" translatable="false">Please capture your billing image.</string>
+    <string name="msg_err_ref_pic" translatable="false">You must pick at least one reference image.</string>
+    <string name="msg_err_capture" translatable="false">Failed to capture the photo from camera</string>
+    <string name="msg_err_permission_denied" translatable="false">Permission denied</string>
+    <string name="msg_err_limit_photo_team" translatable="false">The photo teams must be minimum 4 images.</string>
+    <string name="msg_progressbar" translatable="false">Sending to server...</string>
+    <string name="msg_scan_cancel" translatable="false">Cancel</string>
+    <string name="msg_scan_success" translatable="false">Success</string>
+</resources>

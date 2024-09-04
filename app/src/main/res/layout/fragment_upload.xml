@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context=".fragment.UploadFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_upload">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/label_machine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_machine"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_barcode_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="@string/label_barcode_hint"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:inputType="numberSigned"
+                            android:padding="10dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btn_scan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_scan"
+                            app:backgroundTint="@android:color/holo_green_dark"
+                            app:fabCustomSize="40dp"
+                            android:layout_centerHorizontal="true" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/label_bill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_dispatch"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="10dp"
+                            android:layout_centerVertical="true"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btn_inv_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_camera"
+                            app:backgroundTint="@android:color/holo_green_dark"
+                            app:fabCustomSize="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            tools:ignore="ContentDescription,RelativeOverlap" />
+
+                    </RelativeLayout>
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/iv_invoice"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:scaleType="fitCenter"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        app:riv_corner_radius="10dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/label_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_photo"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/btn_pic_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_camera"
+                        app:backgroundTint="@android:color/holo_green_dark"
+                        app:fabCustomSize="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="@string/label_empty"
+                    android:textStyle="italic"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rl_pics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="3"
+                    android:padding="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_add"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_background"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

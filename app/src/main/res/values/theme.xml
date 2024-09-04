@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BarcodeReader" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@android:color/holo_blue_dark</item>
+        <item name="colorAccent">@android:color/holo_blue_dark</item>
+    </style>
+    <style name="buttonStyle" parent="@android:style/Widget.Button.Small">
+        <item name="android:width">150dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/enter</item>
+        <item name="android:windowExitAnimation">@anim/exit</item>
+    </style>
+</resources>

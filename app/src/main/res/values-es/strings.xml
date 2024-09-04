@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Despachos Impromex</string>
+
+    <string name="home_fragment_label" translatable="false">Despachos Impromex</string>
+    <string name="upload_fragment_label_1" translatable="false">Ingreso Entrega Maquina</string>
+    <string name="upload_fragment_label_2" translatable="false">Ingreso Retiro Maquina</string>
+
+    <string name="label_delivery" translatable="false">Entrega</string>
+    <string name="label_pickup" translatable="false">Retiro</string>
+    <string name="label_machine" translatable="false">#Máquina</string>
+    <string name="label_dispatch" translatable="false">Guia Despacho</string>
+    <string name="label_photo" translatable="false">Fotos Equipos</string>
+    <string name="label_add" translatable="false">Agregar</string>
+    <string name="label_scan_prompt" translatable="false">escanear un código de barras</string>
+    <string name="label_empty" translatable="false">No hay imágenes aquí.</string>
+    <string name="label_barcode_hint" translatable="false">Código de barras</string>
+
+    <string name="msg_err_request" translatable="false">Se produjo un error durante la preparación de los datos de la solicitud.</string>
+    <string name="msg_err_upload" translatable="false">Se produjo un error durante la máquina de registro.</string>
+    <string name="msg_err_scan" translatable="false">Escriba o escanee un código de barras para identificar su máquina.</string>
+    <string name="msg_err_cap_bill" translatable="false">Capture su imagen de facturación.</string>
+    <string name="msg_err_ref_pic" translatable="false">Debes elegir al menos una imagen de referencia.</string>
+    <string name="msg_err_capture" translatable="false">No se pudo capturar la foto de la cámara.</string>
+    <string name="msg_err_permission_denied" translatable="false">Permiso denegado</string>
+    <string name="msg_err_limit_photo_team" translatable="false">Los equipos de fotografía deben tener mínimo 4 imágenes.</string>
+    <string name="msg_progressbar" translatable="false">Enviando al servidor...</string>
+    <string name="msg_scan_cancel" translatable="false">Cancelar</string>
+    <string name="msg_scan_success" translatable="false">Éxito</string>
+</resources>

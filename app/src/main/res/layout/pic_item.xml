@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_item_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:focusable="true"
+        app:riv_corner_radius="10dp"/>
+
+</RelativeLayout>
